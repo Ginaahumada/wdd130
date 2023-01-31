@@ -1,11 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Bree+Serif&family=Dancing+Script&family=Francois+One&family=Kaushan+Script&family=Lobster&display=swap');
+
+:root {
+    --primary-color: #f1faee;
+    --secondary-color: #a8dadc;
+    --accent1-color: #457b9d;
+    --accent2-color: #1d3557;
+
+    --heading-font: 'Lobster', 'Dancing Script', 'Kaushan Script', cursive;
+    --paragraph-font: 'Acme', 'Bree Serif', 'Francois One', sans-serif, serif;
+
+
+    --headline-color-on-white: #457b9d;  /* headlines on a white background */ 
+    --headline-color-on-color: #f1faee; /* headlines on a colored background */ 
+    --paragraph-color-on-white: #1d3557; /* paragraph text on a white background */ 
+    --paragraph-color-on-color: #f1faee; /* paragraph text on a colored background */ 
+    --paragraph-background-color: #457b9d;
+    --nav-link-color: #1d3557;
+    --nav-background-color: #a8dadc;
+    --nav-hover-link-color: #f1faee;
+    --nav-hover-background-color: #1d3557;
+  }
+
 #content {
     max-width: 1600px;
     margin: 0 auto;
 }
 nav a {
     text-align: center;
-    color: #ffffff;
+    color: #f1faee;
     text-decoration: none;
+    padding: 35px;
 }
 #hero-msg h1, #hero-msg h4 {
     text-align: center;
@@ -18,58 +42,90 @@ main section{
 }
 #background {
     height: 725px;
-    background-color: #aed6f0;
+    background-color: #a8dadc;
 }
 body {
-    background-color: #fcfbfb; 
+    background-color: #f1faee;
+    font-family: 'Acme', 'Bree Serif', 'Francois One', sans-serif, serif;;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
 }
 header {
-    background-color:rgb(49, 109, 165);
+    background-color:#457b9d;
+}
+#logo_link{
+    padding-top: 5px;
 }
 nav a:hover {
-    background-color: rgb(19, 35, 80);
-    color: #ffffff;
+    background-color: #1d3557;
+    color: #f1faee;
 }
 .book, .join {
-    background-color: rgb(19, 35, 80);
-    color: #ffffff;
+    background-color: #1d3557;
+    color: #f1faee;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+.card-img {
+    border: 10px solid #1d3557;
+}
+main section img {
+    box-sizing: border-box;
 }
 .book:hover, .join:hover {
-    background-color: rgb(49, 109, 165);
+    background-color: #457b9d;
     color: #d9c2a3;
 }
 .msg {
-    background-color: rgb(49, 109, 165);
+    background-color: #457b9d;
+    line-height: 1.5em;
+    padding: 35px;
 }
 footer {
-    background-color: rgb(49, 109, 165);
-    color: #ffffff;
+    background-color: #457b9d;
+    color: #f1faee;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 .home-title {
     color: #000000;
+    font-family: 'Lobster', 'Dancing Script', 'Kaushan Script', cursive;
+    font-size: 2em;
+    margin-top: 10px;
+}
+h2 {
+    margin: 0;
 }
 h4 {
     color: #000000;
 }
 .msg h2{
-    color: #ffffff;
+    color: #f1faee;
+    font-family: 'Lobster', 'Dancing Script', 'Kaushan Script', cursive;
+
 }
 .msg p {
-    color: #ffffff;
+    color: #f1faee;
+    font-size: 0.8em;
+    padding-bottom: 15px;
 }
 footer a{
-    color: #ffffff;
+    color: #f1faee;
     text-decoration: none;
 }
 footer a:hover {    
-    color: #d9c2a3;
+    color: #f1faee;
 }
 .logo {
     width: 80px;
 }
 .icon {
     width: 80px;
+    padding-top: 10px;
 }
 #hero-img {
     width: 100%;
@@ -79,4 +135,10 @@ footer p {
 } 
 footer p a:hover {
     text-decoration: underline;
+}
+footer .social img {
+    padding-top: 15px;
+}
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
 }
