@@ -134,6 +134,11 @@ nav {
     padding: 35px;
     box-shadow: 5px 5px 10px #6f7364;
 }
+.home-grid {
+    font-family: Roboto Condensed;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
 .book:hover, .join:hover {
     background-color: #457b9d;
     color: #d9c2a3;
@@ -162,7 +167,7 @@ h2 {
     margin: 0;
 }
 h4 {
-    color: #000000;
+    color: #f1faee;
 }
 .rivers-card {
     margin: 200px 0;
@@ -208,6 +213,7 @@ footer .social img {
 .rivers-card, .camping-card, .rapids-card {
     margin: 200px 0;
 }
+home
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;
