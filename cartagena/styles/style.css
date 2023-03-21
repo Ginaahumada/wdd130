@@ -88,7 +88,8 @@ nav a {
     margin-top: 40px;
 }
 #hero-img {
-    width: 99%;
+    width: 100%;
+    max-width: 60.9em;
     border: 4px #E8BB45 ridge;
     box-shadow: 5px 5px 10px #6f7364;
 
@@ -103,6 +104,7 @@ nav a {
     grid-column: 2/7;
     grid-row: 1/4;
     width: 100%;
+    max-width: 50em;
     border: 4px #E8BB45 ridge;
     box-shadow: 5px 5px 10px #6f7364;
 }
@@ -120,7 +122,7 @@ h2 {
     margin: 0;
 }
 .msg h2{
-    color: #f1faee;
+    color: #fs1faee;
     font-family: 'Labrada', serif;
     font-size: 1em;
     padding-bottom: 5px;
@@ -134,6 +136,7 @@ h2 {
     grid-column: 5/10;
     grid-row: 5/8;
     width: 100%;
+    max-width: 50em;
     margin-top: 60px;
     border: 4px #E8BB45 ridge;
     box-shadow: 5px 5px 10px #6f7364;
