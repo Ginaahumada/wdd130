@@ -60,13 +60,13 @@ nav a {
     text-decoration: none;
     padding: 35px;
 }
-#hero, #hero-page2 {
+#hero{
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     margin-top: -100px;
 }
 
-#hero-msg, #hero-whattodo {
+#hero-msg{
     grid-column: 2/3;
     grid-row: 1/2;
     margin-top: 130px;
@@ -75,12 +75,12 @@ nav a {
     border: 3px #E8BB45 groove;
     box-shadow: 5px 5px 10px #6f7364;
 }
-.home-title, .home-title2 {
-    color: #262A3F;
+.home-title{
     font-family: 'Shantell Sans', cursive;
     font-size: 50px;
     margin-top: 20px;
-    text-shadow: 5px 5px 10px #4c4d55;
+    color: #f1faee;
+    text-shadow: -3px -3px 3px #4c4d55, 3px -3px 3px #4c4d55, -3px 3px 3px #4c4d55, 3px 3px 3px #4c4d55;
 }
 #hero-box {
     grid-column: 1/4;
@@ -88,10 +88,13 @@ nav a {
     z-index: -1;
     margin-top: 40px;
 }
-#hero-whattodo p {
+#hero-msg p {
     color: #262A3F;
+    font-family: 'Labrada', serif;
     font-size: 1em;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
     text-shadow: 5px 5px 10px #4c4d55;
 }
 #hero-img {
@@ -101,7 +104,7 @@ nav a {
     box-shadow: 5px 5px 10px #6f7364;
 
 }
-.home-grid, .home-grid-page2 {
+.home-grid{
     font-family: 'Labrada', serif;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
@@ -124,7 +127,7 @@ nav a {
     border: 4px #E8BB45 ridge;
     box-shadow: 5px 5px 10px #6f7364;
 }
-.beach {
+.img1 {
     grid-column: 1/6;
     grid-row: 1/4;
     width: 100%;
@@ -133,7 +136,7 @@ nav a {
     border: 4px #E8BB45 ridge;
     box-shadow: 5px 5px 10px #6f7364;
 }
-.carriage {
+.img2 {
     grid-column: 6/11;
     grid-row: 5/8;
     width: 98%;
@@ -143,7 +146,7 @@ nav a {
     border: 4px #E8BB45 ridge;
     box-shadow: 5px 5px 10px #6f7364;
 }
-.island {
+.img3 {
     grid-column: 1/6;
     grid-row: 9/12;
     width: 100%;
@@ -153,7 +156,7 @@ nav a {
     border: 4px #E8BB45 ridge;
     box-shadow: 5px 5px 10px #6f7364;
 }
-.monuments {
+.img4 {
     grid-column: 6/11;
     grid-row: 13/16;
     width: 98%;
@@ -163,7 +166,7 @@ nav a {
     border: 4px #E8BB45 ridge;
     box-shadow: 5px 5px 10px #6f7364;
 }
-.msg {
+.msg-clock {
     grid-column: 6/10;
     grid-row: 2/3;
     padding: 10px;
@@ -183,7 +186,7 @@ nav a {
     border: 4px #E8BB45 ridge;
     box-shadow: 5px 5px 10px #6f7364;
 }
-.msg-beach {
+.msg1 {
     grid-column: 6/11;
     grid-row: 2/3;
     padding: 10px;
@@ -193,7 +196,7 @@ nav a {
     line-height: 1.5em;
     border: 4px #E8BB45 ridge;
 }
-.msg-carriage {
+.msg2 {
     grid-column: 1/6;
     grid-row: 6/7;
     padding: 10px;
@@ -204,7 +207,7 @@ nav a {
     border: 4px #E8BB45 ridge;
     box-shadow: 5px 5px 10px #6f7364;
 }
-.msg-island {
+.msg3 {
     grid-column: 6/11;
     grid-row: 10/11;
     padding: 10px;
@@ -215,7 +218,7 @@ nav a {
     border: 4px #E8BB45 ridge;
     box-shadow: 5px 5px 10px #6f7364;
 }
-.msg-monuments {
+.msg4 {
     grid-column: 1/6;
     grid-row: 14/15;
     padding: 10px;
@@ -229,13 +232,13 @@ nav a {
 h2 {
     margin: 0;
 }
-.msg h2, .msg-pegasus h2{
+.msg-clock h2, .msg-pegasus h2{
     color: #f1faee;
     font-family: 'Labrada', serif;
     font-size: 1em;
     padding-bottom: 5px;
 }
-.msg p, .msg-pegasus p, .msg-beach p, .msg-carriage p, .msg-island p, .msg-monuments p{
+.msg-clock p, .msg-pegasus p, .msg1 p, .msg2 p, .msg3 p, .msg4 p{
     color: #f1faee;
     font-size: 1em;
     padding-bottom: 5px;
@@ -280,10 +283,10 @@ footer .social img:hover {
         display: block;
         padding: 15px;
     }
-    #hero, #hero-msg, #hero-whattodo {
+    #hero, #hero-msg{
         margin-top: 0;
     }
-    .clock-tower, .msg, .beach, .msg-beach, .island, .msg-island. .Pegasus, .msg-pegasus, .carriage, .msg-carriage, .monuments, .msg-monuments{
+    .clock-tower, .msg-clock, .Pegasus, .msg-pegasus, .img1, .msg1, .img2, .msg2, .img3, .msg3, .img4, .msg4{
         width: 80%;
         display: block;
         margin: 0 auto;
@@ -294,4 +297,88 @@ footer .social img:hover {
     nav, footer {
         flex-direction: column;
     }
+    nav, footer {
+        flex-direction: column;
+    }
+    #background {
+        display: none;
+    }
+}
+form {
+    /* Center the form on the page */
+    margin: 0 auto;
+    width: 400px;
+    /* Form outline */
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  form li + li {
+    margin-top: 1em;
+  }
+  
+  label {
+    /* Uniform size & alignment */
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+  }
+  
+  input,
+  textarea {
+    /* To make sure that all text fields have the same font settings
+       By default, textareas have a monospace font */
+    font: 1em sans-serif;
+  
+    /* Uniform text field size */
+    width: 300px;
+    box-sizing: border-box;
+  
+    /* Match form field borders */
+    border: 1px solid #999;
+  }
+  
+  input:focus,
+  textarea:focus {
+    /* Additional highlight for focused elements */
+    border-color: #000;
+  }
+  
+  textarea {
+    /* Align multiline text fields with their labels */
+    vertical-align: top;
+  
+    /* Provide space to type some text */
+    height: 5em;
+  }
+  
+  .button {
+    /* Align buttons with the text fields */
+    padding-left: 90px; /* same size as the label elements */
+  }
+  
+  button {
+    /* This extra margin represent roughly the same space as the space
+       between the labels and their text fields */
+    margin-left: 0.5em;
+  }
+  #feedback {
+    background-color: antiquewhite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: .5em;
+    /* make this element invisible until we are ready for it */
+    display: none;      
+}
+.moveDown {
+    margin-top: 3em;
 }
