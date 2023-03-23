@@ -261,6 +261,7 @@ footer p {
 footer a{
     color: #f1faee;
     text-decoration: none;
+    border: 4px #0EA0CD solid;
 }
 footer a:hover {    
     color: #262A3F;
