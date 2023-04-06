@@ -247,6 +247,9 @@ h2 {
 main div {
     text-align: justify;
 }
+main section {
+    text-align: justify;
+}
 footer {
     background-color: #0EA0CD;
     color: #f1faee;
